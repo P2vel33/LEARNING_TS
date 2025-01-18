@@ -19,7 +19,8 @@ interface Department {
 // const debts = "debts";
 // type CompanyDebysType = ICompany[debts];
 
-const debts = "debts";
+// let debts = "debts";
+let debts: "debts" = "debts";
 type CompanyDebysType = ICompany[typeof debts];
 
 // type CompanyDebysType = typeof ICompany.debts
