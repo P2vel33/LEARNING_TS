@@ -7,8 +7,22 @@ interface IState {
   data: {
     name: string;
   };
-  tag: string;
+  tag?: string;
 }
+
+const state: Partial<IState> = {
+  data: {
+    name: "John",
+  },
+};
+
+const strictState: Required<IState> = {
+  data: {
+    name: "Data",
+  },
+  tag: "ASd",
+};
+
 
 function action(state: Readonly<IState>) {
   state.data.name = "adas";
